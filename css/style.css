@@ -80,11 +80,9 @@
     #sec2 {
         border-top: 0.5px solid white;
         z-index: -1;
-        height: auto;
-        align-items: left;
+        /* height: auto; */
         justify-content: center;
         display: flex;
-        text-align: left;
         background-color: black;
         color: white;
     }
@@ -97,6 +95,7 @@
         width: 60%;
         height: 100%;
         display: flex;
+        align-items: center;
         flex-direction: column;
         justify-content: center;
         padding: 50px;
@@ -113,7 +112,7 @@
     }
     
     #s2 img {
-        width: 150px;
+        width: 350px;
     }
     
     #btn {
@@ -140,8 +139,54 @@
         display: none;
     }
     
+    .contact {
+        width: 100vw;
+        /* flex-direction: column; */
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #09080A;
+    }
+    
+    .contact h2 {
+        color: blanchedalmond;
+    }
+    
+    .contact input,
+    .contact textarea {
+        width: 350px;
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: 2px solid white;
+        padding-bottom: 10px;
+        color: white;
+    }
+    
+    .formgroup {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    #btn {
+        display: flex;
+        padding: 35px 50px;
+        flex-direction: column;
+    }
+    
+    #btn button {
+        padding: 12px;
+    }
+    
+    .contact label {
+        color: white;
+    }
+    
     @media(max-width:700px) {
         .menuright span {
+            padding: 10px;
             display: block;
         }
         #menu li {
@@ -163,8 +208,11 @@
         #sec2 {
             flex-direction: column;
         }
+        #s1 {
+            width: unset;
+        }
         #s2 {
-            width: 100%;
+            width: unset;
             border: 0.5px solid white;
         }
     }
