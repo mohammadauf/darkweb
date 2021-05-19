@@ -3,6 +3,10 @@
         padding: 0%;
     }
     
+    * {
+        scroll-behavior: smooth;
+    }
+    
     .navbar {
         overflow: hidden;
         background-color: black;
@@ -33,10 +37,15 @@
     }
     
     #menu li a {
-        padding: 15px 20px;
+        padding: 15px 25px;
         font-size: 1.1rem;
         text-decoration: none;
         color: white;
+    }
+    
+    #menu li a:hover {
+        background-color: white;
+        color: black;
     }
     
     #change {
@@ -117,6 +126,10 @@
     
     #btn {
         padding-top: 20px;
+    }
+    
+    #btn button:hover {
+        background-color: black;
     }
     
     #btn button {
