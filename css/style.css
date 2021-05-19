@@ -111,6 +111,10 @@
         justify-content: center;
     }
     
+    #s2 img {
+        width: 350px;
+    }
+    
     #btn {
         padding-top: 20px;
     }
@@ -181,9 +185,9 @@
         color: white;
     }
     
-    @media(max-width:730px) {
+    @media(max-width:885px) {
         #s2 img {
-            width: 234px;
+            width: 254px;
         }
     }
     
