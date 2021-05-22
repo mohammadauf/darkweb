@@ -8,6 +8,8 @@
     }
     
     .navbar {
+        position: sticky;
+        top: 0%;
         overflow: hidden;
         background-color: black;
         padding: 10px;
@@ -23,6 +25,7 @@
     }
     
     .logo {
+        cursor: pointer;
         color: white;
         float: left;
         padding: 10px;
@@ -53,7 +56,7 @@
     }
     
     #sec1 {
-        height: 305px;
+        height: 450px;
         align-items: center;
         justify-content: center;
         display: flex;
@@ -63,7 +66,7 @@
         content: "";
         position: absolute;
         background: url('../Images/img2.jpg') no-repeat center/cover;
-        height: 80vh;
+        height: 450px;
         width: 100vw;
         z-index: -1;
     }
@@ -97,12 +100,14 @@
     }
     
     #heading {
+        border-bottom: 3px solid white;
+        /* padding: 30px 0px; */
         font-size: 2rem;
     }
     
     #s1 {
         width: 60%;
-        height: 100%;
+        /* height: 100%; */
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -120,7 +125,20 @@
         justify-content: center;
     }
     
+    #s2 h1 {
+        font-size: 2rem;
+        padding-top: 25px;
+        border-bottom: 3px solid white;
+    }
+    
+    #s2 p {
+        margin: 30px;
+        padding: 20px;
+        text-align: center;
+    }
+    
     #s2 img {
+        padding: 25px 0px;
         width: 350px;
     }
     
@@ -153,7 +171,7 @@
     }
     
     .contact {
-        border-top: 1px solid white;
+        border-top: 0.5px solid white;
         width: 100vw;
         /* flex-direction: column; */
         height: 430px;
@@ -164,8 +182,9 @@
         background-color: #09080A;
     }
     
-    .contact h2 {
-        color: blanchedalmond;
+    .contact h1 {
+        color: white;
+        font-size: 2rem;
     }
     
     .contact input,
@@ -196,6 +215,15 @@
     
     .contact label {
         color: white;
+    }
+    
+    .footer {
+        background-color: black;
+        color: white;
+        padding: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     @media(max-width:885px) {

@@ -8,20 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/app.js"></script>
     <title>Dark web</title>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">
             <h1><span id="change">REALLY</span>ARD</h1>
         </div>
         <div class="menuright">
             <span onclick="func()">&#9776;</span>
             <ul id="menu">
-                <li><a href="">Home</a></li>
+                <li><a href="#sec1">Home</a></li>
                 <li><a href="#sec2">About</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="#s2">Info</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -40,6 +41,7 @@
             <div id="heading">
                 <h1>WHAT WE <span id="change">DO</span></h1>
             </div>
+            <br><br>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dignissimos quae maiores nobis. Culpa et repellendus qui quas, voluptatum quod similique quasi voluptas at consectetur vitae corrupti amet modi! Officiis.</P>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis officiis laboriosam numquam. Ipsa omnis fugiat reprehenderit consequuntur. Rem saepe, ipsam non a officiis in tempora voluptates quisquam obcaecati laboriosam maiores?</p>
@@ -49,29 +51,32 @@
             </div>
         </div>
         <div id="s2">
+            <h1>Info</h1>
             <img src="Images/girl.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, odio. Quisquam, ex! Esse beatae quasi est laborum atque pariatur, porro commodi? Debitis, libero? Incidunt deserunt voluptatum asperiores dolorem illo animi maxime officia
+                minus autem. Nihil ex exercitationem quibusdam beatae fugit, sint commodi earum quis reprehenderit.</p>
         </div>
     </section>
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <form action=""> S
+        <h1>Contact Us</h1>
+        <form action="">
             <div class="formgroup">
                 <!-- <label for="">Name:</label> -->
-                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" id="name" placeholder="Enter Your Name">
             </div>
             <div class="formgroup">
                 <!-- <label for="">E-mail:</label> -->
-                <input type="text" id="email" placeholder="Enter your e-mail">
+                <input type="text" id="email" placeholder="Enter Your E-mail">
 
             </div>
             <div class="formgroup">
                 <!-- <label for="">Address:</label> -->
-                <input type="text" id="address" placeholder="Enter your address">
+                <input type="text" id="address" placeholder="Enter Your Address">
 
             </div>
             <div class="formgroup">
                 <!-- <label for="">Meassage:</label> -->
-                <input type="text" id="message" placeholder="Enter your message">
+                <input type="text" id="message" placeholder="Enter Your Message">
 
             </div>
             <div id="btn">
@@ -79,18 +84,11 @@
             </div>
         </form>
     </section>
-    <script>
-        function func() {
-            let x = document.getElementById("menu");
-            // x.style.transition 0.5 s
-            if (x.style.display == "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block"
-            }
-
-        }
-    </script>
+    <footer>
+        <div class="footer">
+            Copyright &copy; www.darkweb.com All right reserved!
+        </div>
+    </footer>
 </body>
 
 </html>
